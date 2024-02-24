@@ -1,0 +1,197 @@
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+  height: 527px;
+  background-color: rgba(241, 241, 241, 1);
+}
+
+.mainHeader {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  height: 88px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.mainLogo {
+  padding-left: 40px;
+}
+
+.linkers {
+  display: flex;
+  gap: 17.59px;
+  padding-right: 19px;
+}
+
+.profile {
+  width: 17.59px;
+  height: 17.59px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+p {
+  font-family: Oswald, sans-serif;
+  color: rgba(25, 25, 25, 1)
+}
+
+a {
+  font-family: Oswald;
+  width: 50px;
+  height: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: rgba(25, 25, 25, 1);
+  font-family: Oswald;
+  text-decoration: none;
+}
+
+button {
+  font-family: Oswald, sans-serif;
+  background-color: rgba(63, 95, 83, 1);
+  color: white;
+  font-size: 16px;
+  width: 155px;
+  display: inline-block;
+  /* height: 20px; */
+  border-radius: 21.99px;
+}
+
+.other {
+  margin-top: 88px;
+}
+
+.motherBox {
+  display: grid;
+  width: 1440px;
+  height: 463px;
+  gap: 24px;
+  grid-template-columns: repeat(4, 322fr);
+  padding: 32px 40px;
+}
+
+.smallBox {
+  background-color: white;
+  box-shadow: 1.1313400268554688px 1.508453369140625px 3.7711334228515625px 0px rgba(0, 0, 0, 0.25);
+  height: 420px;
+}
+
+.headPhotos {
+  width: 322px;
+  height: 187px;
+}
+
+h2 {
+  font-family: Oswald, sans-serif;
+  text-align: left;
+  padding: 16px;
+}
+
+span {
+  font-family: Oswald, sans-serif;
+  display: flex;
+  text-wrap: wrap;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.name {
+  display: flex;
+  text-align: start;
+  color: rgba(255, 255, 255, 1);
+  .userphoto {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+}
+
+.user {
+  width: 65px;
+  height: 20px;
+  display: inline;
+  line-height: 20.4px;
+  font-weight: 400px;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: 400px;
+  font-size: 12px;
+  line-height: 20.4px;
+  display: inline;
+}
+
+.rame {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.right {
+  position: relative;
+  left: 100px;
+  top: 10px;
+  display: flex;
+  width: 72px;
+  height: 24px;
+  gap: 10px;
+ 
+}
+
+.timer {
+  width: 38px;
+  height: 20px;
+  opacity: 50%;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20.4px;
+}
+
+@media (max-width: 1150px) {
+  .motherBox {
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+  }
+  .smallBox {
+    width: 517px;
+    height: 507px;
+  }
+  .headPhotos {
+    width: auto;
+    height: 300px;
+  }
+  .right {
+    left: 300px;
+  }
+}
+@media (max-width: 590px) {
+  .motherBox {
+      grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 590px){
+  .mainHeader {
+    position: fixed;
+  }
+}
